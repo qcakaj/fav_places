@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FraktonJobApplicationExample" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextRegularStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/futura_demi</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="GeneralButtonStyle" parent="android:Widget.Button">
+        <item name="android:background">@drawable/general_button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/futura_bold</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:paddingTop">19sp</item>
+        <item name="android:paddingBottom">19sp</item>
+        <item name="android:layout_marginStart">27dp</item>
+        <item name="android:layout_marginEnd">27dp</item>
+    </style>
+
+    <style name="TextHeadingsH2Style" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/futura_demi</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+    </style>
+
+    <style name="TextInputFile" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/futura_book</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="MaterialCardView25RoundedShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+
+    <style name="TextHeadingsH4Style" parent="TextHeadingsH2Style">
+        <item name="fontFamily">@font/futura_demi</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="BottomSheetDialogThemeNoFloating" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+    <style name="TextViewTitleStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/futura_bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="TextViewH2LabelStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/futura_demi</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+</resources>

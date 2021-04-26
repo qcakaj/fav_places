@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "747563471591",
+    "project_id": "fraktonjobapplicationexample",
+    "storage_bucket": "fraktonjobapplicationexample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747563471591:android:f25faf9f5eeab62a9fc842",
+        "android_client_info": {
+          "package_name": "com.ckj.fraktonjobapplicationexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747563471591-8if82fpnn2obgl9qan6f6o15v8muhelq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ckj.fraktonjobapplicationexample",
+            "certificate_hash": "6f67a953be100371acb71a3520f43962fedb986f"
+          }
+        },
+        {
+          "client_id": "747563471591-gjj785353gsn4s80rhtnvqdqartu4sfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1JY-YcyBBGPn5OruJl1dV0f3OjlIyw9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747563471591-gjj785353gsn4s80rhtnvqdqartu4sfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

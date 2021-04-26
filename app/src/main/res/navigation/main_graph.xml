@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.ckj.fraktonjobapplicationexample.ui.main.MapFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ckj.fraktonjobapplicationexample.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mapFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseImageBottomSheet"
+        android:name="com.ckj.fraktonjobapplicationexample.ui.main.ChooseImageBottomSheet"
+        android:label="ChooseImageBottomSheet" />
+    <fragment
+        android:id="@+id/addNewPlaceFragment"
+        android:name="com.ckj.fraktonjobapplicationexample.ui.add_place.AddNewPlaceFragment"
+        android:label="fragment_add_new_place"
+        tools:layout="@layout/fragment_add_new_place" />
+    <dialog
+        android:id="@+id/favoritePlacesBottomSheet"
+        android:name="com.ckj.fraktonjobapplicationexample.ui.favorite_places.FavoritePlacesBottomSheet"
+        android:label="FavoritePlacesBottomSheet" />
+</navigation>

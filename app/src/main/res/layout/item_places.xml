@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="12dp"
+    android:theme="@style/Theme.FraktonJobApplicationExample"
+    app:shapeAppearance="@style/MaterialCardView25RoundedShape"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_location_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/location_name_tv"
+            style="@style/TextHeadingsH4Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{shop.name}"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/place_imageView"
+            app:layout_constraintStart_toEndOf="@id/location_icon"
+            app:layout_constraintTop_toTopOf="@id/location_icon"
+            tools:text="Restaurant" />
+
+        <TextView
+            android:id="@+id/location_address"
+            style="@style/TextRegularStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="5dp"
+            android:lines="5"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/place_imageView"
+            app:layout_constraintStart_toStartOf="@+id/location_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/location_name_tv"
+            tools:text="Hilmi Rakovica," />
+
+        <ImageView
+            android:id="@+id/place_imageView"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:background="@color/colorPrimary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
